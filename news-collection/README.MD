@@ -1,32 +1,38 @@
-OSINT News Intelligence Collector
+🛰️ OSINT News Intelligence Collector
 
-A Python-based Open Source Intelligence (OSINT) tool that automatically collects news article URLs from multiple international and Indian news outlets based on user-defined keyword queries.
+A Python-based Open Source Intelligence (OSINT) tool that collects news article URLs from 20+ international and Indian news outlets based on a user-defined keyword.
 
+The script automatically aggregates publicly available information from RSS feeds of major news organizations and extracts articles relevant to the keyword.
 
-The script aggregates publicly available information from RSS feeds of major news organizations and extracts relevant articles containing the specified keyword. The collected data can assist in monitoring events, cyber incidents, geopolitical developments, and emerging threats.
+This project demonstrates automated intelligence gathering from open sources, commonly used in Cyber Threat Intelligence (CTI), security research, and geopolitical monitoring.
 
-Overview
+📌 Overview
 
-Open Source Intelligence (OSINT) involves collecting and analyzing information from publicly available sources. News platforms are one of the most important OSINT sources for understanding global events, cyber incidents, and geopolitical developments.
+Open Source Intelligence (OSINT) involves collecting and analyzing information from publicly accessible sources.
 
-This tool automates the process of monitoring multiple news outlets and collecting relevant articles for a given topic or keyword.
+News platforms are among the most valuable OSINT sources for tracking:
 
-Features
+cyber incidents
 
-Collects news articles from 20+ global and Indian news sources
+geopolitical developments
 
-Keyword-based intelligence gathering
+misinformation campaigns
 
-Extracts article title, source, and URL
+emerging global events
 
-Supports multiple international news outlets
+This tool helps automate the process of monitoring multiple news sources simultaneously.
 
-Exports results to CSV format
+⚙️ Features
 
-Useful for OSINT investigations, cyber threat intelligence, and research
+✅ Collects articles from 20+ global and Indian news outlets
+✅ Keyword-based intelligence gathering
+✅ Extracts title, source, and article URL
+✅ Saves results in CSV format
+✅ Uses public RSS feeds (OSINT-friendly)
+✅ Lightweight and easy to run
 
-Supported News Sources
-Global News Sources
+🌍 Supported News Sources
+📰 Global Sources
 
 BBC
 
@@ -48,7 +54,7 @@ Bloomberg
 
 CNBC
 
-Indian News Sources
+🇮🇳 Indian Sources
 
 Times of India
 
@@ -74,81 +80,93 @@ Scroll
 
 Deccan Herald
 
-Installation
+📦 Installation
 
 Clone the repository
 
 git clone https://github.com/yourusername/osint-news-collector.git
 cd osint-news-collector
 
-Install required dependency
+Install dependency
 
 pip install feedparser
-Usage
+🚀 Usage
 
 Run the script
 
 python3 news_osint.py
 
-Enter the keyword when prompted
+Enter the keyword when prompted:
 
 Enter keyword to search: ransomware
 
-Example output
+Example output:
 
 [Reuters] Global ransomware attacks increase
 https://www.reuters.com/article/...
 
 [BBC] Cyber attack affects telecom infrastructure
 https://www.bbc.com/news/...
+📊 Output
 
-Results will also be saved in a CSV file
+The script generates a CSV file containing collected intelligence data.
+
+Example:
 
 osint_news_ransomware.csv
-Output Format
 
-The script generates a CSV file containing:
+CSV format:
 
 Source	Title	URL
 Reuters	Global ransomware attacks increase	https://...
 BBC	Cyber attack affects telecom infrastructure	https://...
-Use Cases
+🧠 OSINT Use Cases
 
-This tool can be useful for:
+This tool can assist in:
 
-Cyber Threat Intelligence monitoring
+🔎 Cyber Threat Intelligence (CTI)
+🌐 Geopolitical monitoring
+📡 Security research
+📰 News intelligence gathering
+📊 Academic research projects
+🛡️ Tracking cyber attacks and data breaches
 
-Tracking cyber attacks and data breaches
-
-Geopolitical event monitoring
-
-News intelligence gathering
-
-Security research and analysis
-
-Academic research projects
-
-Ethical Use
+🔒 Ethical Use
 
 This project collects data only from publicly available RSS feeds of news organizations.
-It is intended strictly for research, educational, and OSINT purposes.
 
-Future Improvements
+It is intended strictly for:
 
-Possible enhancements include:
+OSINT research
 
-Adding more global news sources
+educational purposes
 
-Exporting results to JSON format
+security analysis
 
-Removing duplicate articles
+Please use responsibly and respect the terms of service of the respective news platforms.
 
-Building a timeline of collected news
+🔮 Future Improvements
 
-Integrating with Google News search
+Possible enhancements:
 
-Adding automated alerts for new articles
+Add more global news sources
 
-License
+Export results to JSON
 
-This project is open-source and available under the MIT License.
+Remove duplicate URLs
+
+Generate timeline-based intelligence reports
+
+Integrate Google News search
+
+Build a dashboard for visualization
+
+📁 Project Structure
+osint-news-collector
+│
+├── news_osint.py
+├── README.md
+└── sample_output.csv
+📜 License
+
+This project is released under the MIT License.
