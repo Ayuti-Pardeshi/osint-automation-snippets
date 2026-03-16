@@ -2,6 +2,7 @@ OSINT News Intelligence Collector
 
 A Python-based Open Source Intelligence (OSINT) tool that automatically collects news article URLs from multiple international and Indian news outlets based on user-defined keyword queries.
 
+
 The script aggregates publicly available information from RSS feeds of major news organizations and extracts relevant articles containing the specified keyword. The collected data can assist in monitoring events, cyber incidents, geopolitical developments, and emerging threats.
 
 Overview
